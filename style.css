@@ -1,0 +1,161 @@
+/* 리셋 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* 메인 컨텐츠 스타일 */
+main {
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.book img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#timer-controls {
+  margin-bottom: 10px;
+}
+
+#timer-controls button {
+  margin-right: 10px;
+}
+
+#timer {
+  font-size: 24px;
+}
+
+#timer span {
+  padding: 0 5px;
+}
+
+#current-time {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .book {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-toggle:checked ~ nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
