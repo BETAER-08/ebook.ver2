@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>교과서 모음</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>교과서 모음</h1>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="book">
+        <h2>과학 교과서</h2>
+        <a href="https://example.com/book1">
+          <img src="과학교과서.jpg" alt="과학 교과서">
+        </a>
+        <a href="https://example.com/book1">과학 교과서 링크</a>
+      </div>
+
+      <div class="book">
+        <h2>역사 교과서</h2>
+        <a href="https://example.com/book2">
+          <img src="역사교과서.jpg" alt="역사 교과서">
+        </a>
+        <a href="https://example.com/book2">역사 교과서 링크</a>
+      </div>
+
+      <div class="book">
+        <h2>수학 교과서</h2>
+        <a href="https://example.com/book3">
+          <img src="수학교과서.jpg" alt="수학 교과서">
+        </a>
+        <a href="https://example.com/book3">수학 교과서 링크</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="timer-controls">
+      <button id="start-button">시작</button>
+      <button id="pause-button">일시정지</button>
+      <button id="reset-button">초기화</button>
+    </div>
+    <div id="timer">
+      <span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>:<span id="timer-milliseconds">00</span>
+    </div>
+    <p id="current-time"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
